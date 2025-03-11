@@ -34,5 +34,5 @@ body {
   /* 메뉴 항목에 마우스를 올렸을 때 돌출 효과 */
   .menu-item:hover {
     transform: translateY(10px);
-    background-color: #95BA70;
+    background-color: #6D8952;
   }
