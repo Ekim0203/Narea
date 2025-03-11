@@ -1,0 +1,37 @@
+/* 기본 스타일 설정 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 91%;
+    background-color: #95BA70;
+    z-index: 100;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;  /* 메뉴바에 둥근 모서리 추가 */
+  }
+  
+  .menu-item {
+    color: black;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.3s;
+    border-radius: 15px;  /* 메뉴 항목에 둥근 모서리 추가 */
+  }
+  
+  /* 메뉴 항목에 마우스를 올렸을 때 돌출 효과 */
+  .menu-item:hover {
+    transform: translateY(10px);
+    background-color: #95BA70;
+  }
