@@ -1,0 +1,4 @@
+.responsive-image {
+    max-width: 10%; /* 부모 요소보다 커지지 않음 */
+    height: auto; /* 비율 유지 */
+}

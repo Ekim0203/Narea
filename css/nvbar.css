@@ -6,11 +6,12 @@ body {
   
   .navbar {
     position: fixed;
-    top: 0;
+    top: 10;
     right: 0;
     width: 91%;
     background-color: #95BA70;
     z-index: 100;
+    border-radius: 15px;  /* 메뉴바에 둥근 모서리 추가 */
   }
   
   .navbar ul {
