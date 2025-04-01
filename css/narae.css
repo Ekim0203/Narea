@@ -1,8 +1,13 @@
 div.gallery {
-  margin: 5px;
+  margin: 20px;
   border: 1px solid #ccc;
   float: left;
-  width: 180px;
+  width: 25%;
+  min-width: 250px;
+  max-width: 300px;
+  height: auto;
+  background-color:#BCA27C;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 div.gallery:hover {
@@ -88,13 +93,13 @@ h5 {
     color: black
   }
 
-  figcaption {
+  /* figcaption {
   font-family: zabal demo;
   font-size: 0.75rem;
   line-height: 1.25;
   text-transform: uppercase;
 
-}
+} */
 
 .background {
   position: fixed;
@@ -130,7 +135,6 @@ h5 {
   width: 100%;
   height: auto;
   display: flex;
-  flex-wrap: wrap;
   background-color: rgba(109, 137, 82, 0.4);
   margin-bottom: -50px;
   border-top-left-radius: 50px;
@@ -170,6 +174,21 @@ h5 {
 /* 모바일 화면 (최대 600px) mobile */
 @media (max-width: 600px) {
 
+  .top {
+
+    position:fixed;
+    right: 1%;
+    bottom: 1%;
+    font-size: 2.5rem;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-color:#6D8952;
+    border-radius: 100%;
+    border-width: 2px;
+    filter: drop-shadow(4px 4px 6px grey)
+
+}
 
   body {
     background-color: #FCF7E9;
@@ -213,7 +232,7 @@ h2 {
     }
 
 h4 {
-      font-size: 15px;
+      font-size: 13px;
       font-weight: 500;
       margin-left: 10%;
 }
@@ -227,12 +246,9 @@ h5 {
 .container {
   width: 100%;
   height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  
   background-color: rgba(109, 137, 82, 0.4);
-
   border-top-left-radius: 50px;
+  display: grid;
 }
 
 
@@ -246,37 +262,29 @@ h5 {
 
 .btn1 {
   position: relative;
-  background-color: #f6efdc; /* 버튼 배경색 */
+  background-color: #f6efdc; 
   padding: 10px 20px;
   font-size: 18px;
   margin: 20px;
   font-weight: bold;
   border: none;
-  border-radius: 50px; /* 둥근 모서리 */
+  border-radius: 50px; 
   cursor: pointer;
-  box-shadow: 8px 8px 0px rgba(186, 110, 110, 0.8); /* 기본 그림자 */
+  box-shadow: 8px 8px 0px rgba(186, 110, 110, 0.8);
   transition: all 0.2s ease-in-out;
 }
 
 .btn2 {
   position: relative;
-  background-color: #f6efdc; /* 버튼 배경색 */
+  background-color: #f6efdc;
   padding: 10px 20px;
   font-size: 18px;
   font-weight: bold;
   border: none;
-  border-radius: 50px; /* 둥근 모서리 */
+  border-radius: 50px; 
   cursor: pointer;
-  box-shadow: 8px 8px 0px rgba(231, 154, 84, 0.8); /* 기본 그림자 */
+  box-shadow: 8px 8px 0px rgba(231, 154, 84, 0.8);
   transition: all 0.2s ease-in-out;
-}
-
-.btn1:nth-child(1) {
-  box-shadow: 8px 8px 0px rgba(186, 110, 110, 0.8); /* 1 번째 버튼의 그림자 */
-}
-
-.btn2:nth-child(2) {
-  box-shadow: 8px 8px 0px rgba(231, 154, 84, 0.8); /* 두 번째 버튼의 그림자 */
 }
 
 .btn1:hover {
