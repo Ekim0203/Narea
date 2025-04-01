@@ -1,4 +1,11 @@
-.responsive-image {
-    max-width: 10%; /* 부모 요소보다 커지지 않음 */
+.logo {
     height: auto; /* 비율 유지 */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    border-radius: 30px;
+    padding: 10px 10px;
+    background-color: rgba(252, 247, 233, 0.8);
+
 }

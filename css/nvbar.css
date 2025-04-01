@@ -1,38 +1,136 @@
-/* 기본 스타일 설정 */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+
+  z-index: 100;
+  margin: -10;
+  font-family: "Zabal Demo", sans-serif;
+  font-weight: 600;
+  border-radius: 15px;
+}
+
+nav ul li {
+  background-color: #A3BE8C; /* 기존 배경색 */
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li:hover {
+  background-color: #F8EED6; /* 마우스 오버 시 변경될 색상 */
+}
+
+.menu-item:hover {
+  transform: translateY(0px);
+
+  filter: drop-shadow(4px 4px 6px grey)
+}
+
+
+.menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 15px;
+}
+
+.menu-icon {
+  display: none; /* 기본적으로 숨김 (데스크톱에서 보이지 않음) */
+  font-size: 50px;
+  color:#6D8952;
+  margin: -20;
+  cursor: pointer;
+  align-content: center;
+}
+
+/* 모바일 화면 (햄버거 메뉴 적용) Mobile */
+@media (max-width: 600px) {
   .navbar {
     position: fixed;
-    top: 10;
+    top: 0;
     right: 0;
-    width: 91%;
-    background-color: #95BA70;
-    z-index: 100;
-    border-radius: 15px;  /* 메뉴바에 둥근 모서리 추가 */
-  }
-  
-  .navbar ul {
-    list-style: none;
     margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    border-radius: 15px;  /* 메뉴바에 둥근 모서리 추가 */
+    width: 15%;
+    height: 12%;
+    font-family: "Zabal Demo", sans-serif;
+    font-weight: 600;
+    border-radius: 15px;  
+    
+    .menu-icon {
+      position: absolute;
+      display: block; /* 모바일에서만 햄버거 아이콘 표시 */
+
+    }
+
   }
+
+
+/* 타블렛 화면 (햄버거 메뉴 적용) tablet */
+  @media (max-width: 1024px) {
   
-  .menu-item {
-    color: black;
-    padding: 15px 30px;
-    cursor: pointer;
-    transition: transform 0.1s ease, background-color 0.3s;
-    border-radius: 15px;  /* 메뉴 항목에 둥근 모서리 추가 */
+    .menu-list {
+      display: none; /* 테블릿 & 모바일에서는 기본적으로 메뉴 숨김 */
+      flex-direction: column;
+
+      position: absolute;
+      top: 50px;
+      right: 0;
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+ 
   }
-  
-  /* 메뉴 항목에 마우스를 올렸을 때 돌출 효과 */
+
+  /* 데스크톱에서는 항상 메뉴 보이기 Desktop */
+  @media (min-width: 1025px) {
+    .menu-list {
+      display: flex;
+      cursor: pointer;
+    }
+
+    .menu-item:hover {
+      transform: translateY(0px);
+    
+      filter: drop-shadow(4px 4px 6px grey)
+      
+    }
+  }
+
   .menu-item:hover {
-    transform: translateY(10px);
-    background-color: #6D8952;
+    transform: translateY(0px);
+ 
+    filter: drop-shadow(4px 4px 6px grey)
   }
+
+  .menu-list {
+    display: none; /* 처음엔 숨김 */
+    flex-direction: column;
+
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-list.show {
+    display: flex; /* 클릭하면 메뉴 나타나게 */
+  }
+
+  .menu-item {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .menu-item:last-child {
+    border-bottom: none;
+  }
+}

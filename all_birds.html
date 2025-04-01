@@ -1,67 +1,139 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/nvbar.css">
-    <style>
-      body {
-        background-color: #FCF7E9;
-      }
-      </style>
-  </head>
-  <body>
-  
-    <nav class="navbar">
-      <ul>
-        <li class="menu-item"><div><a href="all_birds.html">Endangered Birds</a></div></li>
-        <li class="menu-item"><div><a href="about.html"><span style="color: black";>About us</span></a></div></li>
-        <li class="menu-item">Artworks</li>
-        <li class="menu-item">Join us</li>
-        <li class="menu-item">Follow us</li>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/nvbar.css">   
+
+<link rel="icon" href="images/green_bird.png" type="image/png">
+
+
+
+
+  <nav class="navbar">
+    <ul>
+
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      <script>
+
+</script>
+      <ul class="menu-list">
+        <li class="menu-item"><a href="all_birds.html">Birds</a></li>
+        <li class="menu-item"><a href="about.html">About</a></li>
+        <li class="menu-item">Arts</li>
+        <li class="menu-item">Join</li>
+        <li class="menu-item">Follow</li>
       </ul>
-    </nav>
-  
-    <script src="script.js"></script>
-  </body>
+   
+    </ul>
 
-<!--head section is the sauce-->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <div><a href="index.html"><img src="images/narea_image.svg" width=" 80px" height="50px"></a></div>
-    <title>NAREA</title>
-    <link rel="stylesheet" href="filename.css">
+    <script>
+      // Function to toggle the mobile menu
+      function toggleMenu() {
+        const menuList = document.querySelector('.menu-list');
+        menuList.classList.toggle('show');
+      }
+    </script>
+
+  </nav>
+
 </head>
 
-<!-- this is how you write a comment describing your code in HTML. the body section is for all content that is visible. -->
-<!--body section is the meat-->
 <body>
-    <h1><span style="color:#6D8952";>class I</span></h1>
-    <h3>Overview</h3>
-    <br>
-    <div><button type="button"><a href="class_i.html">class I</a></button></div>
-    <br>
-    <div><button type="button"><a href="class_ii.html">class II</a></button></div>
+  <link rel="stylesheet" href="css/narae_logo.css">
+  <div class="logo"><a href="index.html"><img src="images/narea_image.svg" width="80px" height="50px"></a></div>
+  
+  <title>NAREA</title>
+  <h1>Birds overview</h1>
+
+  <div class="button-container">
+    <link="stylesheet" a href="css/category.css">
+    <a href="class_i.html"><button class="btn1">Category I</button></a>
+  
+    <a href="class_ii.html"><button class="btn2">Category II</button></a>
+  </div>
+  <br>
+
+  <link rel="stylesheet" href="css/narae.css">
+
+  <div class="top">
+    <a href="#">↑</a>
+  </div>
+
+  <div class="background">
+    <img src="images/background_image.png">
+  </div>
 </body>
+  
 
 <body>
-            
-            Spoon-billed sandpiper
-            <div><a href="sandpiper.html"><img src="images/sandpiper.png"></a></div>
-        
-            <div><a href="filename.html">Black-capped Kinfisher</a></div>
-            <img src="images/kinfisher.jpg">
-           
-            <div><a href="filename.html">Falco Subbuteo</a></div>
-            <img src="images/subbuteo.jpg">
-           
-            <div><a href="filename.html">Falco Amurensis Radde</a></div>
-            <img src="images/radde.jpg">
-           
-            <div><a href="filename.html">Great Bustard</a></div>
-            <img src="images/bustard.png">
-</body>
+  <div class="gallery">
+    <a target="_blank" href="images/big_sandpiper.png">
+      <img src="images/big_sandpiper.png" alt="sandpiper" width="auto" height="auto">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="images/big_bustard.png">
+      <img src="images/big_bustard.png" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="images/big_kinfisher.jpg">
+      <img src="images/big_kinfisher.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="images/big_radde.jpg">
+      <img src="images/big_radde.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
 
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+  
+  </body>
+
+  <section>
+    <div class="item">
+      <h4>Home</h4>
+    </div>
+    <div class="item">
+      <h4>Birds</h4>
+    </div>
+    <div class="item">
+      <h4>About Us</h4>
+    </div>
+    <div class="item">
+    <h4>Artworks</h4>
+  </div>
+    <div class="item">
+      <h4>Join us</h4>
+    </div>
+  </section>
+  
 </html>
