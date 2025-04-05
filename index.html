@@ -1,94 +1,114 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/nvbar.css">   
+  <title>NAREA</title>
+
+  <!-- 스타일 시트 링크 -->
+  <link rel="stylesheet" href="css/nvbar.css">
+  <link rel="stylesheet" href="css/narae_logo.css">
+  <link rel="stylesheet" href="css/narae.css">
+
+  <!-- 구글 폰트 링크 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-<link rel="icon" href="images/green_bird.png" type="image/png">
 
+  <!-- 파비콘 링크 -->
+  <link rel="icon" href="images/green_bird.png" type="image/png">
 
+</head>
 
-
+<body>
+  <!-- 네비게이션 바 -->
   <nav class="navbar">
     <ul>
-
       <div class="menu-icon" onclick="toggleMenu()">☰</div>
-      <script>
-
-</script>
       <ul class="menu-list">
         <li class="menu-item"><a href="all_birds.html">Birds</a></li>
         <li class="menu-item"><a href="about.html">About</a></li>
         <li class="menu-item">Arts</li>
         <li class="menu-item">Follow</li>
       </ul>
-   
     </ul>
-
-    <script>
-      // Function to toggle the mobile menu
-      function toggleMenu() {
-        const menuList = document.querySelector('.menu-list');
-        menuList.classList.toggle('show');
-      }
-    </script>
-
   </nav>
 
-</head>
+  <!-- 네비게이션 메뉴 토글 기능 -->
+  <script>
+    function toggleMenu() {
+      const menuList = document.querySelector('.menu-list');
+      menuList.classList.toggle('show');
+    }
+  </script>
 
+  <!-- 로고 -->
+  <div class="logo">
+    <a href="index.html">
+      <img src="images/narea_image.svg" width="80px" height="50px" />
+    </a>
+  </div>
 
-<body>
-  <link rel="stylesheet" href="css/narae_logo.css">
-  <div class="logo"><a href="index.html"><img src="images/narea_image.svg" width="80px" height="50px"></a></div>
-  
-  <title>NAREA</title>
+  <!-- 제목 -->
   <h1>Archive for endangered birds in South Korea</h1>
 
-  <link rel="stylesheet" href="css/narae.css">
-
+  <!-- 상단 스크롤 버튼 -->
   <div class="top">
     <a href="#">↑</a>
   </div>
 
+  <!-- 배경 이미지 -->
   <div class="background">
-    <img src="images/background_image.png">
+    <img src="images/background_image.png" alt="Background Image" />
   </div>
 
+  <!-- 종 정보 -->
   <section>
     <div class="img1">
       <figure>
-        <img src="images/big_sandpiper.png">
+        <img src="images/big_sandpiper.png" alt="Big Sandpiper" />
       </figure>
-      <h5><div>
-      69 species<div>
-      are endangered birds in Korea<div><br>
-
-      16 species in Category I<div></div>
-      53 species in Category II</div>
-    </div></h5>
+      <h4>
+        69 species<br />
+        are endangered birds in Korea<br />
+        16 species in Category I<br />
+        53 species in Category II
+      </h4>
+    </div>
   </section>
 
-  <ul class="container">
-    <div class="item">
-      <h4>Home</h4>
-    </div>
-    <div class="item">
-      <h4>Birds</h4>
-    </div>
-    <div class="item">
-      <h4>About Us</h4>
-    </div>
-    <div class="item">
-    <h4>Artworks</h4>
+  <!-- 텍스트 섹션 -->
+  <div class="textbox1">
+    <h3>"Documenting, Preserving, and Imagining: The Archive Built by Narea"</h3>
+    <p>
+      Narea is a creative archive that collects and reimagines fragments of life, nature, and culture.<br />
+      Rooted in the belief that small stories matter, we gather what’s at risk of being forgotten—through visuals, words, and digital traces.<br />
+      <a href="about.html">[Learn More →]</a>
+    </p>
   </div>
+
+
+<!-- 푸터 -->
+<section class="section">
+  <footer class="container">
     <div class="item">
-      <h4>Follow us</h4>
+      <h4><a href="index.html">Home</a></h4>
     </div>
-</class>
+    <div class="item">
+      <h4><a href="all_birds.html">Birds</a></h4>
+    </div>
+    <div class="item">
+      <h4><a href="about.html">About Us</a></h4>
+    </div>
+    <div class="item">
+      <h4><a href="artworks.html">Artworks</a></h4>
+    </div>
+    <div class="item">
+      <h4><a href="follow.html">Follow Us</a></h4>
+    </div>
+  </footer>
+</section>
 
 </body>
 

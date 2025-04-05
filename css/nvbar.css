@@ -19,7 +19,8 @@ nav ul li {
 }
 
 nav ul li:hover {
-  background-color: #F8EED6; /* 마우스 오버 시 변경될 색상 */
+  background-color: #F8EED6;
+
 }
 
 .menu-item:hover {

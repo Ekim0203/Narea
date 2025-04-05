@@ -44,7 +44,18 @@ h1{
     font-size: 85px;
       margin-left: 4%;
       width: 70vw;
-
+      animation: fadeInUp 1.5s ease-in-out both;
+    }
+    
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
 }
 
 
@@ -58,12 +69,9 @@ h2 {
 
 /* desktop subtitle */
 h3 {
-        font-size: 20px;
-        font-weight: medium;
-        letter-spacing: -0.5px;
-        margin-left: 0%;
-        width: 80vw;
-  }
+  font-size: 30px;
+  font-weight: 600;
+}
 
 /* footer */
 h4 {
@@ -75,6 +83,7 @@ h4 {
 h5 {
   font-size: 16px;
   font-weight: 500;
+  text-align:center;
 }
 
 
@@ -128,29 +137,58 @@ h5 {
 }
 
 
+/* slogan */
+.textbox1 {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding: 130px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* explaination*/
+.textbox2
 
 
-
-.container {
+.section {
+  position: relative;
   width: 100%;
   height: auto;
   display: flex;
-  background-color: rgba(109, 137, 82, 0.4);
-  margin-bottom: -50px;
+  justify-content: space-around;  /* 항목 간 균등 배치 */
+  align-items: center;            /* 항목을 세로로 가운데 정렬 */
+  background-color: rgba(109, 137, 82, 0.4); /* 0.4 투명도 적용 */
+  margin: 0;
+  padding: 20px 0;                /* 위아래 여백 */
   border-top-left-radius: 50px;
 }
 
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
 
 .item {
   font-family: "Inter", sans-serif;
-  padding: 20px;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 600;
-  display: flex;
-    flex-wrap: wrap;
-    gap: 10px; /* 간격 */
+  font-size: 16px;
+  font-weight: 500;
 }
+
+.item a {
+  text-decoration: none;
+  color: black;
+}
+
+.item a:hover {
+  color: #6D8952;  /* hover 시 색상 변경 */
+  text-decoration: underline;
+}
+
+
 
 
 
@@ -204,12 +242,9 @@ h5 {
 
   
   @media (max-width: 768px) { /* 모바일 화면 */
-    .item {
-      flex: 1 1 100%; /* 1-column */
-    }
-  }
 
-  body {
+
+body {
     font-family: "Inter", sans-serif;
     
 }
@@ -231,6 +266,12 @@ h2 {
       width: 80vw;
     }
 
+/* mobile slogan */
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
 h4 {
       font-size: 13px;
       font-weight: 500;
@@ -244,11 +285,10 @@ h5 {
 }
     
 .container {
-  width: 100%;
-  height: auto;
-  background-color: rgba(109, 137, 82, 0.4);
-  border-top-left-radius: 50px;
-  display: grid;
+  display: flex;
+  justify-content: space-around;  /* 항목 간 균등 배치 */
+  align-items: center;            /* 항목을 세로로 가운데 정렬 */
+  padding: 20px 0;
 }
 
 
@@ -295,4 +335,6 @@ h5 {
 .btn2:hover {
   transform: translateY(-3px);
   box-shadow: 12px 12px 0px rgba(231, 154, 84, 0.8);
+}
+
 }
