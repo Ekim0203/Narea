@@ -4,6 +4,39 @@
   font-weight: <weight>;
   font-style: normal;
 } */
+
+.about-section {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.85); /* 반투명 흰 배경 */
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  line-height: 1.75;
+  font-size: 1.125rem;
+  font-family: "Inter", sans-serif;
+  color: #2c2c2c;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.about-section strong {
+  color: #95BA70; 
+  font-weight: 600;
+}
+
+.about-section em {
+  color: #95BA70;
+}
+
+
 .button-container {
   display: flex;
   justify-content: center;
